@@ -1,7 +1,6 @@
 {
-  "projects": [
+  "builds": [
     {
-      "name": "frontend",
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
@@ -9,9 +8,12 @@
       }
     },
     {
-      "name": "backend",
       "src": "backend/package.json",
       "use": "@vercel/node"
     }
+  ],
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/backend/$1" },
+    { "source": "/(.*)", "destination": "/frontend/$1" }
   ]
 }
