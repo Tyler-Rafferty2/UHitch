@@ -1,6 +1,17 @@
 {
-  "version": 2,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "projects": [
+    {
+      "name": "frontend",
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "frontend/build"
+      }
+    },
+    {
+      "name": "backend",
+      "src": "backend/package.json",
+      "use": "@vercel/node"
+    }
   ]
 }
