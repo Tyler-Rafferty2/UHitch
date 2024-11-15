@@ -114,7 +114,7 @@ function BrowseDriver() {
           <ul>
             {riderPosts.map((post, index) => (
               <li key={index}>
-                <p>Ride offer to {post.destination} on {post.date}</p>
+                <p>Ride request to {post.destination} on {post.date}</p>
                 <p>User says {post.description}</p>
                 <button
                   onClick={() => handleUniqueButtonClick(post)} // Unique handler for each button

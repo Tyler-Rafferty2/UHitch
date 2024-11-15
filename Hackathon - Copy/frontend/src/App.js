@@ -23,13 +23,13 @@ function App() {
         <Route path="/Create" element={<Create />} /> {/* Create page route */}
         <Route path="/Create2" element={<Create2 />} /> {/* Create page route */}
         <Route path="/Sign" element={<Sign />} /> {/* Create page route */}
-        <Route path="/DriverHome" element={user ? <DriverHome />: <Navigate to="/sign"/>} />
-        <Route path="/DriverPost" element={user ? <DriverPost />: <Navigate to="/sign"/>} />
-        <Route path="/BrowseDriver" element={user ? <BrowseDriver />: <Navigate to="/sign"/>} />
-        <Route path="/RiderHome" element={user ? <RiderHome />: <Navigate to="/sign"/>} />
-        <Route path="/RiderPost" element={user ? <RiderPost />: <Navigate to="/sign"/>} />
-        <Route path="/BrowseRider" element={user ? <BrowseRider />: <Navigate to="/sign"/>} />
-        <Route path="/Profile" element={user ? <Profile />: <Navigate to="/sign"/>} />
+        <Route path="/DriverHome" element={user ? <DriverHome />: <Navigate to="/"/>} />
+        <Route path="/DriverPost" element={user ? <DriverPost />: <Navigate to="/"/>} />
+        <Route path="/BrowseDriver" element={user ? <BrowseDriver />: <Navigate to="/"/>} />
+        <Route path="/RiderHome" element={user ? <RiderHome />: <Navigate to="/"/>} />
+        <Route path="/RiderPost" element={user ? <RiderPost />: <Navigate to="/"/>} />
+        <Route path="/BrowseRider" element={user ? <BrowseRider />: <Navigate to="/"/>} />
+        <Route path="/Profile" element={user ? <Profile />: <Navigate to="/"/>} />
       </Routes>
     </Router>
   );
