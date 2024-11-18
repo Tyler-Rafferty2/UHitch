@@ -26,7 +26,7 @@ function BrowseRider() {
   
     try {
       console.log('id' + post._id)
-      const response = await fetch(`https://u-hitch-8fd8.vercel.app/api/post/addAccept/${post._id}`, {
+      const response = await fetch(`http://3.142.210.47:3000/api/post/addAccept/${post._id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ function BrowseRider() {
     ///
 
     try {
-      const response = await fetch(`https://u-hitch-8fd8.vercel.app/api/user/${post.email}`, {
+      const response = await fetch(`http://3.142.210.47:3000/api/user/${post.email}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ function BrowseRider() {
   useEffect(() => {
     const fetchDriverPosts = async () => {
       try {
-        const response = await fetch('https://u-hitch-8fd8.vercel.app/api/post/driverposts', {
+        const response = await fetch('http://3.142.210.47:3000/api/post/driverposts', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

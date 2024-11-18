@@ -20,7 +20,7 @@ function Profile(){
 
 
   const fetchProfileData = async () => {
-    const response = await fetch('https://u-hitch-8fd8.vercel.app/api/user/'+user.email, {
+    const response = await fetch('http://3.142.210.47:3000/api/user/'+user.email, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ function Profile(){
   };
   const fetchUserPosts = async () => {
     try {
-      const response = await fetch('https://u-hitch-8fd8.vercel.app/api/post/'+user.email, {
+      const response = await fetch('http://3.142.210.47:3000/api/post/'+user.email, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ function Profile(){
   };
   const fetchAcceptedPosts = async () => {
     try {
-      const response = await fetch('https://u-hitch-8fd8.vercel.app/api/post/accept/'+user.email, {
+      const response = await fetch('http://3.142.210.47:3000/api/post/accept/'+user.email, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ const handleClick = async () => {
     const data = {role};
     try {
       //console.log('id' + userId)
-      const response = await fetch(`https://u-hitch-8fd8.vercel.app/api/user/sendData/${id}`, {
+      const response = await fetch(`http://3.142.210.47:3000/api/user/sendData/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

@@ -17,7 +17,7 @@ function Create2(){
   
     try {
       console.log('id' + userId)
-      const response = await fetch('https://u-hitch-8fd8.vercel.app/api/user/sendData/'+userId, {
+      const response = await fetch('http://3.142.210.47:3000/api/user/sendData/'+userId, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

@@ -18,7 +18,7 @@ function Sign() {
     //
     try {
       await login(email, password)
-      const response = await fetch('https://u-hitch-8fd8.vercel.app/api/user/'+email, {
+      const response = await fetch('http://3.142.210.47:3000/api/user/'+email, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
