@@ -26,7 +26,7 @@ function BrowseDriver() {
   
     try {
       console.log('id' + post._id)
-      const response = await fetch(`http://localhost:5000/api/post/addAccept/${post._id}`, {
+      const response = await fetch(`https://u-hitch-8fd8.vercel.app/api/post/addAccept/${post._id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function BrowseDriver() {
       console.error("Error sending data:", error);
     }
     try {
-      const response = await fetch(`http://localhost:5000/api/user/${post.email}`, {
+      const response = await fetch(`https://u-hitch-8fd8.vercel.app/api/user/${post.email}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ function BrowseDriver() {
   useEffect(() => {
     const fetchRiderPosts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/post/riderposts', {
+        const response = await fetch('https://u-hitch-8fd8.vercel.app/api/post/riderposts', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

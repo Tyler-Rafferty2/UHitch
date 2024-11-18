@@ -17,7 +17,7 @@ function Create(){
     const data = {email,password,_id};
   
     try {
-      const response = await fetch('http://localhost:5000/api/user/signup', {
+      const response = await fetch('https://u-hitch-8fd8.vercel.app/api/user/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

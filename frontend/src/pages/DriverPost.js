@@ -23,7 +23,7 @@ function DriverPost(){
     navigate('/DriverHome');
   };
   const handleClick = async () => {
-    const response = await fetch('http://localhost:5000/api/user/'+user.email, {
+    const response = await fetch('https://u-hitch-8fd8.vercel.app/api/user/'+user.email, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
@@ -41,7 +41,7 @@ function DriverPost(){
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/post/createpost', {
+      const response = await fetch('https://u-hitch-8fd8.vercel.app/api/post/createpost', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
