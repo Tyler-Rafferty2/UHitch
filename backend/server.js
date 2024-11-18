@@ -13,8 +13,11 @@ const postRoutes = require('./routes/postRoutes')
 const app = express()
 
 
-
-app.use(cors())
+const corsOptions = {
+    origin: 'https://u-hitch-8fd8.vercel.app/',
+    methods: 'GET,POST',
+  };
+  app.use(cors(corsOptions));
 
 // middleware
 app.use(express.json())
