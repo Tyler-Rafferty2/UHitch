@@ -11,7 +11,7 @@ export const useLogin = () => {
         setError(null)
     
         try {
-          const response = await fetch('https://u-hitch-8fd8.vercel.app/api/user/login', {
+          const response = await fetch('http://3.142.210.47:3000/api/user/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password }),
