@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "proxy": "https://u-hitch-8fd8.vercel.app",
+  "proxy": "http://3.142.210.47:3000",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^6.6.3",
