@@ -12,6 +12,8 @@ const postRoutes = require('./routes/postRoutes')
 // express app
 const app = express()
 
+const port = process.env.PORT || 5000;
+
 app.use(cors())
 
 // middleware
@@ -30,7 +32,7 @@ app.use('/api/post', postRoutes)
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
         // listen
-        app.listen(process.env.PORT, () => {
+        app.listen(port, () => {
         console.log('connected to mongo and listening on port', process.env.PORT)
         })
     })
