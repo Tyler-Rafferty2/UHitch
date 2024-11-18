@@ -14,7 +14,7 @@ const app = express()
 
 
 const corsOptions = {
-    origin: 'https://u-hitch-8fd8.vercel.app/',
+    origin: 'https://u-hitch-8fd8.vercel.app',
     methods: 'GET,POST',
   };
   app.use(cors(corsOptions));
