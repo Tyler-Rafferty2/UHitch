@@ -17,7 +17,7 @@ function Create2(){
   
     try {
       console.log('id' + userId)
-      const response = await fetch('http://3.142.210.47:3000/api/user/sendData/'+userId, {
+      const response = await fetch('http://18.119.172.198:5000/api/user/sendData/'+userId, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

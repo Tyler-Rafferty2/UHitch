@@ -18,7 +18,7 @@ function Sign() {
     //
     try {
       await login(email, password)
-      const response = await fetch('http://3.142.210.47:3000/api/user/'+email, {
+      const response = await fetch('http://18.119.172.198:5000/api/user/'+email, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
