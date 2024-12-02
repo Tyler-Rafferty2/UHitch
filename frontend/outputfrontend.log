@@ -3,154 +3,19 @@ nohup: ignoring input
 > client@0.1.0 start
 > DANGEROUSLY_DISABLE_HOST_CHECK=true react-scripts start
 
-(node:659657) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:736183) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 (Use `node-18 --trace-deprecation ...` to show where the warning was created)
-(node:659657) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:736183) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
-Compiled with warnings.
+Compiled successfully!
 
-[eslint] 
-src/pages/BrowseDriver.js
-  Line 9:10:   'userData' is assigned a value but never used                                                                  no-unused-vars
-  Line 9:20:   'setUserData' is assigned a value but never used                                                               no-unused-vars
-  Line 11:10:  'email' is assigned a value but never used                                                                     no-unused-vars
-  Line 11:17:  'setEmail' is assigned a value but never used                                                                  no-unused-vars
-  Line 12:10:  'password' is assigned a value but never used                                                                  no-unused-vars
-  Line 12:20:  'setPassword' is assigned a value but never used                                                               no-unused-vars
-  Line 93:8:   React Hook useEffect has a missing dependency: 'user.token'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+You can now view client in the browser.
 
-src/pages/BrowseRider.js
-  Line 9:10:   'userData' is assigned a value but never used                                                                  no-unused-vars
-  Line 9:20:   'setUserData' is assigned a value but never used                                                               no-unused-vars
-  Line 11:10:  'email' is assigned a value but never used                                                                     no-unused-vars
-  Line 11:17:  'setEmail' is assigned a value but never used                                                                  no-unused-vars
-  Line 12:10:  'password' is assigned a value but never used                                                                  no-unused-vars
-  Line 12:20:  'setPassword' is assigned a value but never used                                                               no-unused-vars
-  Line 15:10:  'acceptedOriginalUser' is assigned a value but never used                                                      no-unused-vars
-  Line 15:32:  'setAcceptedOriginalUser' is assigned a value but never used                                                   no-unused-vars
-  Line 97:8:   React Hook useEffect has a missing dependency: 'user.token'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  Local:            http://localhost:3000
+  On Your Network:  http://172.31.0.102:3000
 
-src/pages/Create.js
-  Line 10:15:  'setId' is assigned a value but never used  no-unused-vars
+Note that the development build is not optimized.
+To create a production build, use npm run build.
 
-src/pages/Create2.js
-  Line 9:10:   'email' is assigned a value but never used        no-unused-vars
-  Line 9:17:   'setEmail' is assigned a value but never used     no-unused-vars
-  Line 10:10:  'password' is assigned a value but never used     no-unused-vars
-  Line 10:20:  'setPassword' is assigned a value but never used  no-unused-vars
-
-src/pages/DriverHome.js
-  Line 1:23:  'useLocation' is defined but never used  no-unused-vars
-  Line 2:17:  'useEffect' is defined but never used    no-unused-vars
-  Line 2:28:  'useState' is defined but never used     no-unused-vars
-
-src/pages/DriverPost.js
-  Line 1:41:   'useContext' is defined but never used             no-unused-vars
-  Line 2:23:   'useLocation' is defined but never used            no-unused-vars
-  Line 3:10:   'AuthContext' is defined but never used            no-unused-vars
-  Line 13:10:  'email' is assigned a value but never used         no-unused-vars
-  Line 13:17:  'setEmail' is assigned a value but never used      no-unused-vars
-  Line 14:10:  'postType' is assigned a value but never used      no-unused-vars
-  Line 19:9:   'handleSignIn' is assigned a value but never used  no-unused-vars
-
-src/pages/Profile.js
-  Line 3:10:   'useLocation' is defined but never used                                                                                                                            no-unused-vars
-  Line 10:10:  'email' is assigned a value but never used                                                                                                                         no-unused-vars
-  Line 10:17:  'setEmail' is assigned a value but never used                                                                                                                      no-unused-vars
-  Line 11:10:  'password' is assigned a value but never used                                                                                                                      no-unused-vars
-  Line 11:20:  'setPassword' is assigned a value but never used                                                                                                                   no-unused-vars
-  Line 12:10:  'name' is assigned a value but never used                                                                                                                          no-unused-vars
-  Line 12:16:  'setName' is assigned a value but never used                                                                                                                       no-unused-vars
-  Line 15:10:  'description' is assigned a value but never used                                                                                                                   no-unused-vars
-  Line 15:23:  'setDescription' is assigned a value but never used                                                                                                                no-unused-vars
-  Line 85:4:   React Hook useEffect has missing dependencies: 'fetchAcceptedPosts', 'fetchProfileData', and 'fetchUserPosts'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/RiderHome.js
-  Line 1:23:  'useLocation' is defined but never used  no-unused-vars
-  Line 2:17:  'useEffect' is defined but never used    no-unused-vars
-  Line 2:28:  'useState' is defined but never used     no-unused-vars
-
-src/pages/RiderPost.js
-  Line 1:41:   'useContext' is defined but never used             no-unused-vars
-  Line 2:23:   'useLocation' is defined but never used            no-unused-vars
-  Line 3:10:   'AuthContext' is defined but never used            no-unused-vars
-  Line 13:10:  'email' is assigned a value but never used         no-unused-vars
-  Line 13:17:  'setEmail' is assigned a value but never used      no-unused-vars
-  Line 14:10:  'postType' is assigned a value but never used      no-unused-vars
-  Line 19:9:   'handleSignIn' is assigned a value but never used  no-unused-vars
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/pages/BrowseDriver.js
-  Line 9:10:   'userData' is assigned a value but never used                                                                  no-unused-vars
-  Line 9:20:   'setUserData' is assigned a value but never used                                                               no-unused-vars
-  Line 11:10:  'email' is assigned a value but never used                                                                     no-unused-vars
-  Line 11:17:  'setEmail' is assigned a value but never used                                                                  no-unused-vars
-  Line 12:10:  'password' is assigned a value but never used                                                                  no-unused-vars
-  Line 12:20:  'setPassword' is assigned a value but never used                                                               no-unused-vars
-  Line 93:8:   React Hook useEffect has a missing dependency: 'user.token'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/BrowseRider.js
-  Line 9:10:   'userData' is assigned a value but never used                                                                  no-unused-vars
-  Line 9:20:   'setUserData' is assigned a value but never used                                                               no-unused-vars
-  Line 11:10:  'email' is assigned a value but never used                                                                     no-unused-vars
-  Line 11:17:  'setEmail' is assigned a value but never used                                                                  no-unused-vars
-  Line 12:10:  'password' is assigned a value but never used                                                                  no-unused-vars
-  Line 12:20:  'setPassword' is assigned a value but never used                                                               no-unused-vars
-  Line 15:10:  'acceptedOriginalUser' is assigned a value but never used                                                      no-unused-vars
-  Line 15:32:  'setAcceptedOriginalUser' is assigned a value but never used                                                   no-unused-vars
-  Line 97:8:   React Hook useEffect has a missing dependency: 'user.token'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/Create.js
-  Line 10:15:  'setId' is assigned a value but never used  no-unused-vars
-
-src/pages/Create2.js
-  Line 9:10:   'email' is assigned a value but never used        no-unused-vars
-  Line 9:17:   'setEmail' is assigned a value but never used     no-unused-vars
-  Line 10:10:  'password' is assigned a value but never used     no-unused-vars
-  Line 10:20:  'setPassword' is assigned a value but never used  no-unused-vars
-
-src/pages/DriverHome.js
-  Line 1:23:  'useLocation' is defined but never used  no-unused-vars
-  Line 2:17:  'useEffect' is defined but never used    no-unused-vars
-  Line 2:28:  'useState' is defined but never used     no-unused-vars
-
-src/pages/DriverPost.js
-  Line 1:41:   'useContext' is defined but never used             no-unused-vars
-  Line 2:23:   'useLocation' is defined but never used            no-unused-vars
-  Line 3:10:   'AuthContext' is defined but never used            no-unused-vars
-  Line 13:10:  'email' is assigned a value but never used         no-unused-vars
-  Line 13:17:  'setEmail' is assigned a value but never used      no-unused-vars
-  Line 14:10:  'postType' is assigned a value but never used      no-unused-vars
-  Line 19:9:   'handleSignIn' is assigned a value but never used  no-unused-vars
-
-src/pages/Profile.js
-  Line 3:10:   'useLocation' is defined but never used                                                                                                                            no-unused-vars
-  Line 10:10:  'email' is assigned a value but never used                                                                                                                         no-unused-vars
-  Line 10:17:  'setEmail' is assigned a value but never used                                                                                                                      no-unused-vars
-  Line 11:10:  'password' is assigned a value but never used                                                                                                                      no-unused-vars
-  Line 11:20:  'setPassword' is assigned a value but never used                                                                                                                   no-unused-vars
-  Line 12:10:  'name' is assigned a value but never used                                                                                                                          no-unused-vars
-  Line 12:16:  'setName' is assigned a value but never used                                                                                                                       no-unused-vars
-  Line 15:10:  'description' is assigned a value but never used                                                                                                                   no-unused-vars
-  Line 15:23:  'setDescription' is assigned a value but never used                                                                                                                no-unused-vars
-  Line 85:4:   React Hook useEffect has missing dependencies: 'fetchAcceptedPosts', 'fetchProfileData', and 'fetchUserPosts'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/RiderHome.js
-  Line 1:23:  'useLocation' is defined but never used  no-unused-vars
-  Line 2:17:  'useEffect' is defined but never used    no-unused-vars
-  Line 2:28:  'useState' is defined but never used     no-unused-vars
-
-src/pages/RiderPost.js
-  Line 1:41:   'useContext' is defined but never used             no-unused-vars
-  Line 2:23:   'useLocation' is defined but never used            no-unused-vars
-  Line 3:10:   'AuthContext' is defined but never used            no-unused-vars
-  Line 13:10:  'email' is assigned a value but never used         no-unused-vars
-  Line 13:17:  'setEmail' is assigned a value but never used      no-unused-vars
-  Line 14:10:  'postType' is assigned a value but never used      no-unused-vars
-  Line 19:9:   'handleSignIn' is assigned a value but never used  no-unused-vars
-
-webpack compiled with 1 warning
+webpack compiled successfully

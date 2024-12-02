@@ -4,18 +4,3 @@ nohup: ignoring input
 > node server.js
 
 connected to mongo and listening on port 5000
-Host: 18.119.172.198:5000
-Origin: http://www.uhitch.live
-/api/user/login POST
-Host: 18.119.172.198:5000
-Origin: http://www.uhitch.live
-/api/user/login POST
-Host: 18.119.172.198:5000
-Origin: http://www.uhitch.live
-/api/user/RiderTest@umass.edu GET
-Host: 18.119.172.198:5000
-Origin: undefined
-/apple-touch-icon.png GET
-Host: 18.119.172.198:5000
-Origin: undefined
-/apple-touch-icon-precomposed.png GET
