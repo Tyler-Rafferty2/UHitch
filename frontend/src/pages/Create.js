@@ -17,7 +17,7 @@ function Create(){
     const data = {email,password,_id};
   
     try {
-      const response = await fetch('http://18.119.172.198:5000/api/user/signup', {
+      const response = await fetch('https://www.uhitch.live:5000/api/user/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

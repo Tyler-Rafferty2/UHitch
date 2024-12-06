@@ -23,7 +23,7 @@ function DriverPost(){
     navigate('/DriverHome');
   };
   const handleClick = async () => {
-    const response = await fetch('http://18.119.172.198:5000/api/user/'+user.email, {
+    const response = await fetch('https://www.uhitch.live:5000/api/user/'+user.email, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
@@ -41,7 +41,7 @@ function DriverPost(){
     }
 
     try {
-      const response = await fetch('http://18.119.172.198:5000/api/post/createpost', {
+      const response = await fetch('https://www.uhitch.live:5000/api/post/createpost', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

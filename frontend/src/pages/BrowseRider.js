@@ -26,7 +26,7 @@ function BrowseRider() {
   
     try {
       console.log('id' + post._id)
-      const response = await fetch(`http://18.119.172.198:5000/api/post/addAccept/${post._id}`, {
+      const response = await fetch(`https://www.uhitch.live:5000/api/post/addAccept/${post._id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ function BrowseRider() {
     ///
 
     try {
-      const response = await fetch(`http://18.119.172.198:5000/api/user/${post.email}`, {
+      const response = await fetch(`https://www.uhitch.live:5000/api/user/${post.email}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ function BrowseRider() {
   useEffect(() => {
     const fetchDriverPosts = async () => {
       try {
-        const response = await fetch('http://18.119.172.198:5000/api/post/driverposts', {
+        const response = await fetch('https://www.uhitch.live:5000/api/post/driverposts', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

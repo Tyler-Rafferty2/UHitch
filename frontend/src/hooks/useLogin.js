@@ -11,7 +11,7 @@ export const useLogin = () => {
         setError(null)
     
         try {
-          const response = await fetch('http://18.119.172.198:5000/api/user/login', {
+          const response = await fetch('https://www.uhitch.live:5000/api/user/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password }),

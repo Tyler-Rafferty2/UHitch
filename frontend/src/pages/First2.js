@@ -32,6 +32,7 @@ function First2() {
           <button onClick={handleCreate}>Sign Up</button>
           <button onClick={handleSignIn}>Already have an account? Sign In</button>
         </div>
+	 <p className="info-text">To view the website without an account, continue to sign in.</p>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ function Sign() {
     //
     try {
       await login(email, password)
-      const response = await fetch('http://18.119.172.198:5000/api/user/'+email, {
+      const response = await fetch('https://www.uhitch.live:5000/api/user/'+email, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
@@ -69,6 +69,14 @@ function Sign() {
           <button disabled={isLoading} onClick={handleClick}>Sign In</button>
           <button onClick={handleCreate}>Don't have an account? Sign up</button>
         </div>
+      </div>
+	{/* Right Section */}
+      <div className="test-credentials">
+        <p>
+          <strong>Test Credentials:</strong>
+        </p>
+        <p>Email: <em>Test@umass.edu</em></p>
+        <p>Password: <em>password</em></p>
       </div>
       {error && (
         <div className="error">

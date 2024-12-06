@@ -41,7 +41,7 @@ function DriverHome() {
       </div>
       <div className="input-container create-buttons-right">
         <div className="button-section-right">
-          <button onClick={handleAddCar}>Change/Add Car</button>
+         {/* <button onClick={handleAddCar}>Change/Add Car</button> */}
           <button onClick={handlePost}>Post A Ride Offer</button>
         </div>
       </div>

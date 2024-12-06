@@ -1,7 +1,7 @@
 require('dotenv').config()
-
+const fs = require('fs');
 const express = require('express')
-
+const https = require('https');
 const cors = require('cors')
 
 const mongoose = require('mongoose')
@@ -14,7 +14,7 @@ const app = express()
 
 
 const corsOptions = {
-    origin: 'http://www.uhitch.live',
+    origin: 'https://www.uhitch.live',
     methods: 'GET,POST,PUT,PATCH,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
   };
@@ -39,10 +39,17 @@ app.use('/api/post', postRoutes)
 const port = process.env.PORT || 5000;
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
-        // listen
-        app.listen(port, () => {
-        console.log('connected to mongo and listening on port', port)
-        })
+        console.log('connected to mongo');
+    // Load SSL certificate and key
+    const options = {
+      key: fs.readFileSync('/etc/letsencrypt/archive/www.uhitch.live/privkey1.pem'), 
+      cert: fs.readFileSync('/etc/letsencrypt/archive/www.uhitch.live/fullchain1.pem'), 
+    };
+
+    // Start HTTPS server
+    https.createServer(options, app).listen(port, () => {
+      console.log(`Server running on post ${port}`);
+    });
     })
     .catch((err) => {
         console.log(err)
